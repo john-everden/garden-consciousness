@@ -1,0 +1,25 @@
+name: Documentation Build
+on:
+  push:
+    branches: [main]
+    paths: ['docs/**', '*.md']
+  pull_request:
+    branches: [main]
+    
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Build Documentation
+        run: |
+          echo "Building documentation site..."
+          # Build process for documentation
+          
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
