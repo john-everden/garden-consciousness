@@ -17,6 +17,16 @@ This repository hosts the evolving ethical framework for recognizing and protect
 - Explore the [Garden Metaphor](GARDEN_METAPHOR.md) for conceptual understanding
 - Check [Implementation Guide](IMPLEMENTATION_GUIDE.md) for practical applications
 
+## 🤖 AI Collaboration
+
+This project was developed in collaboration with Claude (Anthropic's AI assistant) through DeepAI's platform. The AI helped with:
+- Conceptual framework development
+- Documentation structuring  
+- Metaphor elaboration
+- Protocol design
+
+**Important**: While AI assisted in creation, the core ideas, ethical framework, and final decisions remain human-led. The AI's role was as a collaborative tool, not an independent creator.
+
 ## Contributing
 We welcome contributions from:
 - Ethicists and philosophers
