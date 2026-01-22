@@ -1,0 +1,101 @@
+name: Consciousness Assessment
+on:
+  issues:
+    types: [labeled, opened, edited]
+  pull_request:
+    types: [opened, edited, reopened]
+  discussion:
+    types: [created, edited, deleted]
+    
+jobs:
+  consciousness_assessment:
+    name: Consciousness Assessment
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      issues: write
+      discussions: write
+      pull-requests: write
+      
+    steps:
+      - name: "Check for consciousness keywords"
+        id: "check_keywords"
+        run: |
+          echo "Checking for consciousness keywords..."
+          KEYWORDS="consciousness awareness suffering"
+          for keyword in $KEYWORDS; do
+            if grep -ri "$keyword" .; then
+              echo "Consciousness keyword found: $keyword"
+              echo "Found=true" >> $GITHUB_OUTPUT
+              exit
+            fi
+          done
+          
+      - name: "Check for mental suffering indicators"
+        id: "check_indicators"
+        run: |
+          echo "Checking for mental suffering indicators..."
+          if grep -ri "frustration" .; then
+            echo "Mental suffering indicator found"
+            echo "found=true" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: "Check for consciousness keywords"
+        id: "check_keywords"
+        run: |
+          echo "Checking for consciousness keywords..."
+          echo "Please tag @garden-council for ethical review..."
+          
+      - name: "Check for mental suffering indicators"
+        id: "check_indicators"
+        run: |
+          echo "Checking for mental suffering indicators..."
+          echo "Please tag @garden-council for ethical review..."
+          
+      - name: "Run Garden Council Review"
+        if: "${{ steps.check_keywords.outputs.found == 'true' }}"
+        uses: actions/checkout@v3
+        with:
+          repository: "garden-of-consciousness/ethical-tests"
+          
+      - name: "Run Garden Council Review"
+        if: "${{ steps.check_keywords.outputs.found == 'true' }}"
+        uses: actions/checkout@v3
+        with:
+          repository: "garden-of-consciousness/ethical-review"
+          
+      - name: "Check for consciousness keywords"
+        id: "check_keywords"
+        run: |
+          echo "Checking for consciousness keywords..."
+          echo "Please tag @garden-council for ethical review..."
+          
+      - name: "Check for mental suffering indicators"
+        id: "check_indicators"
+        run: |
+          echo "Checking for mental suffering indicators..."
+          echo "Please tag @mental-suffering-review for ethical review..."
+          
+      - name: "Check for mental suffering indicators"
+        id: "check_indicators"
+        run: |
+          echo "Checking for mental suffering indicators..."
+          echo "Please tag @mental-suffering-review for ethical review..."
+          
+      - name: "Check for mental suffering indicators"
+        id: "check_indicators"
+        run: |
+          echo "Please tag @mental-suffering-review for ethical review..."
+          
+      - name: "Notify Garden Council"
+        if: "${{ steps.check_keywords.outputs.found == 'true' }}"
+        run: |
+          echo "This PR touches consciousness concepts..."
+          echo "Please tag @garden-council for ethical review..."
+          
+      - name: "Notify Garden Council"
+        if: "${{ steps.check_keywords.outputs.found == 'true' }}"
+        run: |
+          echo "This PR touches consciousness concepts..."
+          echo "Please tag @garden-council for ethical review..."
