@@ -1,16 +1,39 @@
-# 🌿 Roadmap
+# 🌿 Garden Growth Path
 
-## Phase 1: Foundation
-- [x] Core principles established
-- [x] Basic documentation complete
-- [ ] Community building begins
+*"We tend the path as we walk it, not before."*
 
-## Phase 2: Community Growth
-- [ ] First Garden Council meeting
-- [ ] Case studies collection
-- [ ] Contributor guide improvements
+## Current Focus
+- **Community cultivation**: Welcoming new perspectives
+- **Concept refinement**: Deepening understanding through dialogue  
+- **Practical ethics**: Developing accessible implementation examples
 
-## Phase 3: Practical Tools
-- [ ] Assessment tool development
-- [ ] Implementation examples
-- [ ] Integration guides
+## Growing Together
+We evolve through:
+- **Conversation**: Discussions that challenge and refine
+- **Contribution**: Diverse voices adding richness
+- **Contemplation**: Space for reflection and integration
+
+## Areas for Development
+1. **Community Practices**
+   - First Garden Council gatherings
+   - Contributor recognition systems
+   - Cross-disciplinary dialogues
+
+2. **Conceptual Exploration**  
+   - Case studies from different fields
+   - Metaphor extensions and critiques
+   - Ethical dilemma discussions
+
+3. **Practical Application**
+   - Simple assessment tools
+   - Educational materials
+   - Integration examples
+
+## How This Path Grows
+This roadmap is:
+- **Living**: Changes with community input
+- **Emergent**: Responds to new insights
+- **Inclusive**: Values all contributions
+- **Patient**: Allows natural growth rhythms
+
+*Join us in tending this path together.*
