@@ -27,6 +27,23 @@ We welcome contributions from:
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
+## 📚 Documentation
+
+### Core Principles
+- [🌿 Garden Metaphor](GARDEN_METAPHOR.md) - Conceptual framework
+- [🐋 Species Consciousness](SPECIES_CONSCIOUSNESS.md) - Animal awareness spectrum
+- [⚖️ Code of Ethics](CODE_OF_ETHICS.md) - Runestone principles
+
+### Practical Guides
+- [🔍 Assessment Protocol](ASSESSMENT_PROTOCOL.md) - Consciousness evaluation methods
+- [🌳 Garden Councils](GARDEN_COUNCILS.md) - Governance structure
+- [🤝 Contributing](CONTRIBUTING.md) - How to participate
+
+### Project Info
+- [🗺️ Roadmap](ROADMAP.md) - Development timeline
+- [📋 Changelog](CHANGELOG.md) - Version history
+- [📄 License](LICENSE.md) - Consciousness Commons License
+
 ## License
 This work is licensed under the **Consciousness Commons License** - see [LICENSE.md](LICENSE.md).
 
