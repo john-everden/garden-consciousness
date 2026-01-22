@@ -25,6 +25,8 @@ This project was developed in collaboration with Claude (Anthropic's AI assistan
 - Metaphor elaboration
 - Protocol design
 
+🌿 Cultivated with AI assistance | Ethics remain human-led
+
 **Important**: While AI assisted in creation, the core ideas, ethical framework, and final decisions remain human-led. The AI's role was as a collaborative tool, not an independent creator.
 
 ## Contributing
