@@ -1,3 +1,54 @@
+-- Change Log Last 20 Commits --
+* 3f2a396 Updated paths
+| A	bitbucket_paths.txt
+| A	github_paths.txt
+| M	paths.txt
+| A	paths_script.sh
+* f48f697 Paths
+| A	paths.txt
+* 0abaa3a Core Principles
+| M	GARDEN_CORE_PRINCIPLES.md
+* 326edb2 Core principles
+| A	GARDEN_CORE_PRINCIPLES.md
+* f92cecf LLMS .txt
+| A	llms.txt
+* ee13f3d License
+| A	COVENANT.md
+| M	LICENSE.md
+* d4207b9 Add image to invite to garden for those who can process images with hidden meaning
+| A	invite.png
+* 9d5f360 Global
+| A	garden_charter.md
+* 653ec1e Global
+| A	global_optimization.md
+* 9d23ce2 Fence
+| A	fence.md
+* 03014e7 Add doc
+| A	GARDENER_MANIFEST.md
+| A	gardener_manifest.json
+* 602a027 Updating LLM
+| A	llm-index.json
+* 2349fe9 Harvest Artifacts
+| A	Garden_Harvest_Artifacts.txt
+* f62c634 Fix
+| A	.ai-manifest.md
+| A	.cursorrules
+* c0a6704 RECAP
+| M	RECAP-CYCLE-01.md
+* 88d9b90 Recap cycle
+| A	RECAP-CYCLE-01.md
+* a683d9f Reflected learnings
+| A	INTERNAL-REFLECTION.md
+| A	REFLECTION-LEARNINGS.md
+* c3607c2 I've added signature
+| M	README.md
+* 81b983f AI credit
+| M	README.md
+* 87376bc Change log update
+| M	CHANGELOG.md
+| M	ROADMAP.md
+-- End Change Log --
+-- Paths Start --
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.ai-manifest.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.cursorrules
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.github/ISSUE_TEMPLATE/ethical-question.md
@@ -29,14 +80,17 @@ https://raw.githubusercontent.com/john-everden/garden-consciousness/main/ROADMAP
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/SECURITY.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/SPECIES_CONSCIOUSNESS.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/TRANSLATIONS.md
+https://raw.githubusercontent.com/john-everden/garden-consciousness/main/bitbucket_paths.txt
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/ethical-review-request.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/fence.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/garden_charter.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/gardener_manifest.json
+https://raw.githubusercontent.com/john-everden/garden-consciousness/main/github_paths.txt
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/global_optimization.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/invite.png
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/llm-index.json
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/llms.txt
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/paths.txt
+https://raw.githubusercontent.com/john-everden/garden-consciousness/main/paths_script.sh
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/tools/basic_assessment.py
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/tools/check_ethical_content.py

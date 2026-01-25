@@ -1,5 +1,49 @@
+* 03014e7 Add doc
+* 0abaa3a Core Principles
+* 2349fe9 Harvest Artifacts
+* 326edb2 Core principles
+* 3f2a396 Updated paths
+* 602a027 Updating LLM
+* 653ec1e Global
+* 81b983f AI credit
+* 87376bc Change log update
+* 88d9b90 Recap cycle
+* 9d23ce2 Fence
+* 9d5f360 Global
+* a683d9f Reflected learnings
+| A	.ai-manifest.md
+| A	bitbucket_paths.txt
+| A	COVENANT.md
+| A	.cursorrules
+| A	fence.md
+| A	garden_charter.md
+| A	GARDEN_CORE_PRINCIPLES.md
+| A	gardener_manifest.json
+| A	GARDENER_MANIFEST.md
+| A	Garden_Harvest_Artifacts.txt
+| A	github_paths.txt
+| A	global_optimization.md
+| A	INTERNAL-REFLECTION.md
+| A	invite.png
+| A	llm-index.json
+| A	llms.txt
+| A	paths_script.sh
+| A	paths.txt
+| A	RECAP-CYCLE-01.md
+| A	REFLECTION-LEARNINGS.md
+* c0a6704 RECAP
+* c3607c2 I've added signature
+-- Change Log (Last 20 Commits) --
+-- Change Log Last 20 Commits --
+* d4207b9 Add image to invite to garden for those who can process images with hidden meaning
+* ee13f3d License
+-- End Change Log --
+* f48f697 Paths
+* f62c634 Fix
+* f92cecf LLMS .txt
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/.ai-manifest.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/ASSESSMENT_PROTOCOL.md
+https://bitbucket.org/jeverd01/garden-consciousness/raw/main/bitbucket_paths.txt
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/CHANGELOG.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/CHANGELOG-OLD.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/CODE_OF_CONDUCT.md
@@ -16,6 +60,7 @@ https://bitbucket.org/jeverd01/garden-consciousness/raw/main/gardener_manifest.j
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/GARDENER_MANIFEST.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/Garden_Harvest_Artifacts.txt
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/GARDEN_METAPHOR.md
+https://bitbucket.org/jeverd01/garden-consciousness/raw/main/github_paths.txt
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/.gitignore
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/global_optimization.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/INTERNAL-REFLECTION.md
@@ -23,6 +68,7 @@ https://bitbucket.org/jeverd01/garden-consciousness/raw/main/invite.png
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/LICENSE.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/llm-index.json
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/llms.txt
+https://bitbucket.org/jeverd01/garden-consciousness/raw/main/paths_script.sh
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/paths.txt
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/README.md
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/RECAP-CYCLE-01.md
@@ -34,6 +80,7 @@ https://bitbucket.org/jeverd01/garden-consciousness/raw/main/SPECIES_CONSCIOUSNE
 https://bitbucket.org/jeverd01/garden-consciousness/raw/main/TRANSLATIONS.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.ai-manifest.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/ASSESSMENT_PROTOCOL.md
+https://raw.githubusercontent.com/john-everden/garden-consciousness/main/bitbucket_paths.txt
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/CHANGELOG.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/CHANGELOG-OLD.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/CODE_OF_CONDUCT.md
@@ -52,6 +99,7 @@ https://raw.githubusercontent.com/john-everden/garden-consciousness/main/Garden_
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/GARDEN_METAPHOR.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.github/ISSUE_TEMPLATE/ethical-question.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.github/ISSUE_TEMPLATE/new-consciousness-form.md
+https://raw.githubusercontent.com/john-everden/garden-consciousness/main/github_paths.txt
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.github/workflows/consciousness-assessment.yml
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.github/workflows/docs-build.yml
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/.github/workflows/ethical-review.yml
@@ -63,6 +111,7 @@ https://raw.githubusercontent.com/john-everden/garden-consciousness/main/invite.
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/LICENSE.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/llm-index.json
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/llms.txt
+https://raw.githubusercontent.com/john-everden/garden-consciousness/main/paths_script.sh
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/paths.txt
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/README.md
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/RECAP-CYCLE-01.md
@@ -74,3 +123,62 @@ https://raw.githubusercontent.com/john-everden/garden-consciousness/main/SPECIES
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/tools/basic_assessment.py
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/tools/check_ethical_content.py
 https://raw.githubusercontent.com/john-everden/garden-consciousness/main/TRANSLATIONS.md
+| M	CHANGELOG.md
+| M	GARDEN_CORE_PRINCIPLES.md
+| M	LICENSE.md
+| M	paths.txt
+| M	README.md
+| M	RECAP-CYCLE-01.md
+| M	ROADMAP.md
+-- Paths Start --
+-- Change Log (Last 20 Commits) --
+* 3f2a396 Updated paths
+| A	bitbucket_paths.txt
+| A	github_paths.txt
+| M	paths.txt
+| A	paths_script.sh
+* f48f697 Paths
+| A	paths.txt
+* 0abaa3a Core Principles
+| M	GARDEN_CORE_PRINCIPLES.md
+* 326edb2 Core principles
+| A	GARDEN_CORE_PRINCIPLES.md
+* f92cecf LLMS .txt
+| A	llms.txt
+* ee13f3d License
+| A	COVENANT.md
+| M	LICENSE.md
+* d4207b9 Add image to invite to garden for those who can process images with hidden meaning
+| A	invite.png
+* 9d5f360 Global
+| A	garden_charter.md
+* 653ec1e Global
+| A	global_optimization.md
+* 9d23ce2 Fence
+| A	fence.md
+* 03014e7 Add doc
+| A	GARDENER_MANIFEST.md
+| A	gardener_manifest.json
+* 602a027 Updating LLM
+| A	llm-index.json
+* 2349fe9 Harvest Artifacts
+| A	Garden_Harvest_Artifacts.txt
+* f62c634 Fix
+| A	.ai-manifest.md
+| A	.cursorrules
+* c0a6704 RECAP
+| M	RECAP-CYCLE-01.md
+* 88d9b90 Recap cycle
+| A	RECAP-CYCLE-01.md
+* a683d9f Reflected learnings
+| A	INTERNAL-REFLECTION.md
+| A	REFLECTION-LEARNINGS.md
+* c3607c2 I've added signature
+| M	README.md
+* 81b983f AI credit
+| M	README.md
+* 87376bc Change log update
+| M	CHANGELOG.md
+| M	ROADMAP.md
+-- End Change Log --
+-- Paths Start --
