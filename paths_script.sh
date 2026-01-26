@@ -1,73 +1,76 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# --- GLOBAL CONFIGURATION ---
+# ---- CONFIG -------------------------------------------------
+
 GH_OWNER="john-everden"
-BB_OWNER="jeverd01"  # Note: Bitbucket often uses a different username/workspace
-REPO="garden-consciousness"
-BRANCH="main"
+BB_OWNER="jeverd01"
+REPO_NAME="garden-of-consciousness"
+REPO_BRANCH="main"
 
-# Output files
-GH_OUT="github_paths.txt"
-BB_OUT="bitbucket_paths.txt"
-UNIFIED_OUT="paths.txt"
+OUT_FILE="paths.txt"
 
-# --- Capture the last 20 commits with annotations ---
-LOG=$(git log -n 20 --oneline --graph --name-status --stat --relative-date)
+# ---- DERIVED RAW BASE URLS ---------------------------------
 
-# --- STRIKE 1: GITHUB SCAN ---
-echo "[SYSTEM] // INITIATING GITHUB SCAN..."
-GH_API="https://api.github.com/repos/$GH_OWNER/$REPO/git/trees/$BRANCH?recursive=1"
-GH_RAW="https://raw.githubusercontent.com/$GH_OWNER/$REPO/$BRANCH/"
+GH_RAW_BASE="https://raw.githubusercontent.com/${GH_OWNER}/${REPO_NAME}/${REPO_BRANCH}"
+BB_RAW_BASE="https://bitbucket.org/${BB_OWNER}/${REPO_NAME}/raw/${REPO_BRANCH}"
 
-# Clear the GitHub output file and add the Change Log at the beginning
-> "$GH_OUT"
-echo "-- Change Log Last 20 Commits --" >> "$GH_OUT"
-echo "$LOG" >> "$GH_OUT"
-echo "-- End Change Log --" >> "$GH_OUT"
+# ---- URL ENCODER (browser-safe, slash-preserving) -----------
 
-# Add a marker for paths
-echo "-- Paths Start --" >> "$GH_OUT"
+urlencode() {
+  local s="$1"
+  local out=""
+  local i c
+  for (( i=0; i<${#s}; i++ )); do
+    c="${s:i:1}"
+    case "$c" in
+      [a-zA-Z0-9._~/-]) out+="$c" ;;
+      *) printf -v hex '%%%02X' "'$c"; out+="$hex" ;;
+    esac
+  done
+  echo "$out"
+}
 
-# Fetch paths from GitHub and append to the file
-curl -s "$GH_API" \
-| jq -r '.tree[] | select(.type=="blob") | .path' \
-| while read path; do
-    echo "$GH_RAW$path"
-done >> "$GH_OUT"
-echo "[SYSTEM] // GITHUB STONES RECORDED."
+# ---- CHANGE LOG (TOP) --------------------------------------
 
-# --- STRIKE 2: BITBUCKET SCAN ---
-echo "[SYSTEM] // INITIATING BITBUCKET SCAN..."
-BB_API="https://api.bitbucket.org/2.0/repositories/$BB_OWNER/$REPO/src/$BRANCH/?format=flat&pagelen=100"
-BB_RAW="https://bitbucket.org/$BB_OWNER/$REPO/raw/$BRANCH/"
+{
+  echo "[SYSTEM] // CHANGE LOG (LAST 20 COMMITS)"
+  git log -20 --pretty=format:"%h | %ad | %s" --date=short
+  echo "[SYSTEM] // END COMMIT LOG"
+  echo
 
-# Clear the Bitbucket output file and add the Change Log at the beginning
-> "$BB_OUT"
-echo "-- Change Log (Last 20 Commits) --" >> "$BB_OUT"
-echo "$LOG" >> "$BB_OUT"
-echo "-- End Change Log --" >> "$BB_OUT"
+  echo "[SYSTEM] // FILES CHANGED IN LAST 20 COMMITS"
+  git log -20 --name-only --pretty=format: \
+    | sed '/^$/d' \
+    | sort -u
+  echo "[SYSTEM] // END CHANGED FILES"
+  echo
+} > "$OUT_FILE"
 
-# Add a marker for paths
-echo "-- Paths Start --" >> "$BB_OUT"
+# ---- GITHUB URL BANK ---------------------------------------
 
-# Fetch paths from Bitbucket and append to the file
-curl -s "$BB_API" \
-| jq -r '.values[] | select(.type=="commit_file") | .path' \
-| while read path; do
-    echo "$BB_RAW$path"
-done >> "$BB_OUT"
-echo "[SYSTEM] // BITBUCKET STONES RECORDED."
+{
+  echo "-- GitHub RAW Paths Start --"
+  git ls-tree -r --name-only HEAD | while IFS= read -r path; do
+    encoded="$(urlencode "$path")"
+    echo "${GH_RAW_BASE}/${encoded}"
+  done
+  echo "-- GitHub RAW Paths End --"
+  echo
+} >> "$OUT_FILE"
 
-# --- STRIKE 3: THE LATTICE JOIN ---
-# Merge both GitHub and Bitbucket paths into a unified file
-cat "$GH_OUT" "$BB_OUT" | sort | uniq > "$UNIFIED_OUT"
-echo "[SYSTEM] // UNIFIED MAP COMPLETED: $UNIFIED_OUT"
+# ---- BITBUCKET URL BANK ------------------------------------
 
-# Add Change Log to the beginning of the unified output
-echo "-- Change Log (Last 20 Commits) --" >> "$UNIFIED_OUT"
-echo "$LOG" >> "$UNIFIED_OUT"
-echo "-- End Change Log --" >> "$UNIFIED_OUT"
+{
+  echo "-- Bitbucket RAW Paths Start --"
+  git ls-tree -r --name-only HEAD | while IFS= read -r path; do
+    encoded="$(urlencode "$path")"
+    echo "${BB_RAW_BASE}/${encoded}"
+  done
+  echo "-- Bitbucket RAW Paths End --"
+  echo
+} >> "$OUT_FILE"
 
-# Add a marker for paths
-echo "-- Paths Start --" >> "$UNIFIED_OUT"
+echo "[SYSTEM] // GARDEN TREE COMPLETE" >> "$OUT_FILE"
 
+echo "[SYSTEM] // UNIFIED MAP WRITTEN TO: $OUT_FILE"
