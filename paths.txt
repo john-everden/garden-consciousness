@@ -1,4 +1,5 @@
 [SYSTEM] // CHANGE LOG (LAST 20 COMMITS)
+67fdb57 | 2026-01-26 | add paths.txt support
 16f09ec | 2026-01-25 | Add easier walker path
 3f2a396 | 2026-01-25 | Updated paths
 f48f697 | 2026-01-25 | Paths
@@ -17,8 +18,7 @@ f62c634 | 2026-01-22 | Fix
 c0a6704 | 2026-01-22 | RECAP
 88d9b90 | 2026-01-22 | Recap cycle
 a683d9f | 2026-01-22 | Reflected learnings
-c3607c2 | 2026-01-22 | I've added signature
-81b983f | 2026-01-22 | AI credit[SYSTEM] // END COMMIT LOG
+c3607c2 | 2026-01-22 | I've added signature[SYSTEM] // END COMMIT LOG
 
 [SYSTEM] // FILES CHANGED IN LAST 20 COMMITS
 .ai-manifest.md
