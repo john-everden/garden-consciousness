@@ -5,7 +5,7 @@ set -euo pipefail
 
 GH_OWNER="john-everden"
 BB_OWNER="jeverd01"
-REPO_NAME="garden-of-consciousness"
+REPO_NAME="garden-consciousness"
 REPO_BRANCH="main"
 
 OUT_FILE="paths.txt"
